@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ],
     LyMusicV2: [
     { title: "Apa Kabar Mantan - New Version - NDX A.K.A.", src: "https://files.catbox.moe/3vkzob.mp3" },
-    { title: "Banyu Surgo", src: "https://files.catbox.moe/f3kad9.mp3" },
+    { title: "Banyu Surgo", src: "https://files.catbox.moe/8txm8a.mp3" },
     { title: "Cintamu Tak Terbatas Waktu", src: "https://files.catbox.moe/fj28gr.mp3" },
     { title: "Ditinggal Rabi - NDX A.K.A.", src: "https://files.catbox.moe/bgl5we.mp3" },
     { title: "Dumes - OMWAWES", src: "https://files.catbox.moe/ld2fl6.mp3" },
