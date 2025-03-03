@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ly Music</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .donate-button {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    background-color: #000;
+    color: #00FFFF; 
+    padding: 10px 20px;
+    border: 2px solid #00FFFF; 
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFF; 
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out, border-color 0.5s ease-in-out;
+    z-index: 1000;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.donate-button:hover {
+    box-shadow: 0 0 15px #00FFFF;
+    border-color: #00FFFF; 
+}
+
+.donate-button:active {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px #00FFFF; 
+}
+
+
+@keyframes neonGlow {
+    from {
+        border-color: #00FFFF; 
+        box-shadow: 0 0 5px #00FFFF;
+    }
+    to {
+        border-color: rgba(0, 255, 255, 0.5);
+        box-shadow: 0 0 20px #00FFFF;
+    }
+}
+
+/* Style for the Request Music button */
+.req-button {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background-color: #000;
+    color: #00FF00; /* Neon Green */
+    padding: 10px 20px;
+    border: 2px solid #00FF00; /* Neon Green */
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FF00; /* Neon Green */
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out, border-color 0.5s ease-in-out;
+    z-index: 1000;
+    animation: neonGlowGreen 1.5s ease-in-out infinite alternate;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.req-button:hover {
+    box-shadow: 0 0 15px #00FF00; /* Neon Green */
+    border-color: #00FF00; /* Neon Green */
+}
+
+.req-button:active {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px #00FF00; /* Neon Green */
+}
+
+@keyframes neonGlowGreen {
+    from {
+        border-color: #00FF00; /* Neon Green */
+        box-shadow: 0 0 5px #00FF00; /* Neon Green */
+    }
+    to {
+        border-color: rgba(0, 255, 0, 0.5); /* Faded Neon Green */
+        box-shadow: 0 0 20px #00FF00; /* Neon Green */
+    }
+}
+    </style>
+    <div class="head">
+    <h1 id="ly-title">
+        Ly Music
+        <div class="image-container">
+            <img id="anime-sitting" src="https://files.catbox.moe/zz35ko.png">
+        </div>
+        <img id="right-image" src="/asset/ryo.png" alt="Gambar 4:5"> </h1>
+</div>
+    </h1>
+    <a href="https://saweria.co/lippwangsaff" target="_blank">
+        <button class="donate-button">Donate For Developer</button>
+    </a>
+    <!-- Request Music Button -->
+    <a href="https://wa.me/6283143776050?text=Req+lagu+bang" target="_blank">
+        <button class="req-button">Req Music?</button>
+    </a>
+</div>
+</head>
+
+<body>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="container">
+        <div class="search-bar">
+           <input type="text" id="search-input" placeholder="Cari lagu...">
+           <i class="fas fa-search search-icon" id="search-button"></i>
+       </div>
+       <div id="search-results">
+        <ul id="search-list"></ul>
+       </div>
+        <div class="playlist-container">
+            <div class="playlist-slider">
+                <div class="playlist-item" data-playlist="LyMusicV1">
+    <div class="playlist-card playlist1" style="background-image: url('/asset/unmei.png');" tabindex="0"></div>
+    <div class="playlist-title">LyMusicV1</div>
+</div>
+<div class="playlist-item" data-playlist="LyMusicV2">
+    <div class="playlist-card playlist2" style="background-image: url('/asset/ai.png');" tabindex="0"></div>
+    <div class="playlist-title">LyMusicV2</div>
+</div>
+<div class="playlist-item" data-playlist="LyMusicV3">
+    <div class="playlist-card playlist3" style="background-image: url('/asset/renai.png');" tabindex="0"></div>
+    <div class="playlist-title">LyMusicV3</div>
+</div>
+<div class="playlist-item" data-playlist="LyMusicV4">
+    <div class="playlist-card playlist4" style="background-image: url('/asset/kei.png');" tabindex="0"></div>
+    <div class="playlist-title">LyMusicV4</div>
+</div>
+<div class="playlist-item" data-playlist="LyMusicV5">
+    <div class="playlist-card playlist5" style="background-image: url('/asset/ninym.png');" tabindex="0"></div>
+    <div class="playlist-title">LyMusicV5</div>
+</div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-prev">‹</button>
+                <button class="slider-next">›</button>
+            </div>
+        </div>
+        <div id="playlist-songs">
+        </div>
+        <div class="playlist-content">
+            <h2 id="playlist-title"></h2>
+            <ul id="song-list"></ul>
+        </div>
+        <div class="player">
+            <audio id="audio-player"></audio>
+            <div class="song-info">
+                <span class="arrow left-arrow"><i class="fas fa-chevron-left"></i></span>
+                <h3 id="song-title"></h3>
+                <span class="arrow right-arrow"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div id="loading-indicator">
+    <video id="loading-video" width="24" height="24" muted loop style="display: none;"></video>
+    <span id="loading-text">Loading...</span>
+</div>
+            <div class="progress-container">
+                <div class="progress">
+                    <div class="thumb"></div>
+                </div>
+                <div class="time-container">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="repeat-left"></button>
+                <button id="prev-btn"></button>
+                <button id="play-btn"></button>
+                <button id="next-btn"></button>
+                <button id="repeat-right"></button>
+            </div>
+        </div>
+    </div>
+    <script src="musicc.js"></script>
+</body>
+
+</html>
